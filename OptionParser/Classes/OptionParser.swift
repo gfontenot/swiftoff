@@ -1,5 +1,5 @@
 public class OptionParser {
-    var options: [Option] = []
+    private var options: [Option] = []
     public init() {
     }
 }
@@ -9,7 +9,7 @@ public extension OptionParser {
         for option in options {
             for argument in arguments {
                 if option.matches(argument) {
-                    option.action("foo")
+                    option.action(.None)
                 }
             }
         }
@@ -17,7 +17,7 @@ public extension OptionParser {
 }
 
 public extension OptionParser {
-    func onFlag(long: String, short: String, description: String, action: (Any) -> ()) {
+    func on(long: String, short: String, description: String, action: (Any?) -> ()) {
         options += Option(long: long, short: short, desc: description, action: action)
     }
 }

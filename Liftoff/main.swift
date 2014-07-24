@@ -1,7 +1,7 @@
 import OptionParser
 
 let opts = OptionParser()
-opts.onFlag("--foo", short: "-f", description: "foo") { _ in
+opts.on("--foo", short: "-f", description: "foo") { _ in
     println("Hello Foo")
 }
 

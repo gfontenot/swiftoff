@@ -2,9 +2,9 @@ struct Option {
     let long: String
     let short: String?
     let desc: String
-    let action: (Any) -> ()
+    let action: (Any?) -> ()
 
-    init(long: String, short: String?, desc: String, action: (Any) -> ()) {
+    init(long: String, short: String?, desc: String, action: (Any?) -> ()) {
         self.long = long
         self.short = short
         self.desc = desc
