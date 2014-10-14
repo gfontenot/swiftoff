@@ -11,8 +11,7 @@
 		F802DD6F1980AC47005F81AF /* OptionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F802DD6B1980AC47005F81AF /* OptionParser.swift */; };
 		F802DD771980AC50005F81AF /* OptionParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F802DD751980AC50005F81AF /* OptionParserSpec.swift */; };
 		F82A450E19EDA0FB0080B387 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A450D19EDA0FB0080B387 /* main.swift */; };
-		F82A450F19EDA11E0080B387 /* OptionKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82A44FD19ED9F100080B387 /* OptionKit.framework */; };
-		F82A451019EDB0F50080B387 /* OptionKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82A44FD19ED9F100080B387 /* OptionKit.framework */; };
+		F82A451319EDC84E0080B387 /* OptionKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82A451219EDC84E0080B387 /* OptionKit.framework */; };
 		F896ABC01980AB99008DD359 /* OptionParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F896ABB51980AB98008DD359 /* OptionParser.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,10 +43,10 @@
 		F802DD6D1980AC47005F81AF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F802DD731980AC50005F81AF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F802DD751980AC50005F81AF /* OptionParserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionParserSpec.swift; sourceTree = "<group>"; };
-		F82A44FD19ED9F100080B387 /* OptionKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OptionKit.framework; path = ../../Frameworks/OptionKit.framework; sourceTree = "<group>"; };
 		F82A450319EDA0750080B387 /* liftoff */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = liftoff; sourceTree = BUILT_PRODUCTS_DIR; };
 		F82A450C19EDA0FA0080B387 /* liftoff-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "liftoff-Bridging-Header.h"; sourceTree = "<group>"; };
 		F82A450D19EDA0FB0080B387 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F82A451219EDC84E0080B387 /* OptionKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OptionKit.framework; sourceTree = "<group>"; };
 		F896ABB51980AB98008DD359 /* OptionParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OptionParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F896ABBF1980AB99008DD359 /* OptionParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OptionParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -57,7 +56,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F82A450F19EDA11E0080B387 /* OptionKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F82A451019EDB0F50080B387 /* OptionKit.framework in Frameworks */,
+				F82A451319EDC84E0080B387 /* OptionKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,14 +129,6 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		F82A44FC19ED9EFF0080B387 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F82A44FD19ED9F100080B387 /* OptionKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		F82A450B19EDA0C80080B387 /* liftoff */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,11 +138,19 @@
 			path = liftoff;
 			sourceTree = "<group>";
 		};
+		F82A451119EDC84E0080B387 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F82A451219EDC84E0080B387 /* OptionKit.framework */,
+			);
+			path = frameworks;
+			sourceTree = "<group>";
+		};
 		F8889B731942431900DF1A47 = {
 			isa = PBXGroup;
 			children = (
+				F82A451119EDC84E0080B387 /* frameworks */,
 				F82A450B19EDA0C80080B387 /* liftoff */,
-				F82A44FC19ED9EFF0080B387 /* Frameworks */,
 				F802DD681980AC47005F81AF /* OptionParser */,
 				F802DD711980AC50005F81AF /* OptionParserTests */,
 				F8889B7D1942431900DF1A47 /* Products */,
@@ -480,6 +478,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/gordon/Code/Frameworks,
+					"$(PROJECT_DIR)/frameworks",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -509,6 +508,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/gordon/Code/Frameworks,
+					"$(PROJECT_DIR)/frameworks",
 				);
 				FRAMEWORK_VERSION = A;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
