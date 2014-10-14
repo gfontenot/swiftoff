@@ -1,4 +1,4 @@
-#!/usr/bin/env xcrun swift -F /Users/gordon/Code/Frameworks
+#!/usr/bin/env xcrun swift -F __LIB__
 
 import OptionParser
 
