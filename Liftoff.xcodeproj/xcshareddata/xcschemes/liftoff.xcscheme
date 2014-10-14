@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0600"
+   LastUpgradeVersion = "0610"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,23 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F8889B7B1942431900DF1A47"
-               BuildableName = "Liftoff"
-               BlueprintName = "Liftoff"
+               BlueprintIdentifier = "F82A450219EDA0750080B387"
+               BuildableName = "liftoff"
+               BlueprintName = "liftoff"
+               ReferencedContainer = "container:Liftoff.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F896ABB41980AB98008DD359"
+               BuildableName = "OptionParser.framework"
+               BlueprintName = "OptionParser"
                ReferencedContainer = "container:Liftoff.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,23 +42,13 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F896ABBE1980AB99008DD359"
-               BuildableName = "OptionParserTests.xctest"
-               BlueprintName = "OptionParserTests"
-               ReferencedContainer = "container:Liftoff.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F8889B7B1942431900DF1A47"
-            BuildableName = "Liftoff"
-            BlueprintName = "Liftoff"
+            BlueprintIdentifier = "F82A450219EDA0750080B387"
+            BuildableName = "liftoff"
+            BlueprintName = "liftoff"
             ReferencedContainer = "container:Liftoff.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -61,9 +65,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F8889B7B1942431900DF1A47"
-            BuildableName = "Liftoff"
-            BlueprintName = "Liftoff"
+            BlueprintIdentifier = "F82A450219EDA0750080B387"
+            BuildableName = "liftoff"
+            BlueprintName = "liftoff"
             ReferencedContainer = "container:Liftoff.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -79,9 +83,9 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F8889B7B1942431900DF1A47"
-            BuildableName = "Liftoff"
-            BlueprintName = "Liftoff"
+            BlueprintIdentifier = "F82A450219EDA0750080B387"
+            BuildableName = "liftoff"
+            BlueprintName = "liftoff"
             ReferencedContainer = "container:Liftoff.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

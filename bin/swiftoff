@@ -1,0 +1,5 @@
+#!/usr/bin/env xcrun swift -F /Users/gordon/Code/Frameworks
+
+import OptionParser
+
+doShit(Process.arguments)

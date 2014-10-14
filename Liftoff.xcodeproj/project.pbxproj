@@ -10,8 +10,9 @@
 		F802DD6E1980AC47005F81AF /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = F802DD6A1980AC47005F81AF /* Option.swift */; };
 		F802DD6F1980AC47005F81AF /* OptionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F802DD6B1980AC47005F81AF /* OptionParser.swift */; };
 		F802DD771980AC50005F81AF /* OptionParserSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = F802DD751980AC50005F81AF /* OptionParserSpec.swift */; };
-		F802DD781980ACE6005F81AF /* OptionParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F896ABB51980AB98008DD359 /* OptionParser.framework */; };
-		F8889B801942431900DF1A47 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8889B7F1942431900DF1A47 /* main.swift */; };
+		F82A450E19EDA0FB0080B387 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A450D19EDA0FB0080B387 /* main.swift */; };
+		F82A450F19EDA11E0080B387 /* OptionKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82A44FD19ED9F100080B387 /* OptionKit.framework */; };
+		F82A451019EDB0F50080B387 /* OptionKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F82A44FD19ED9F100080B387 /* OptionKit.framework */; };
 		F896ABC01980AB99008DD359 /* OptionParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F896ABB51980AB98008DD359 /* OptionParser.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		F8889B7A1942431900DF1A47 /* CopyFiles */ = {
+		F82A450119EDA0750080B387 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -43,18 +44,20 @@
 		F802DD6D1980AC47005F81AF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F802DD731980AC50005F81AF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F802DD751980AC50005F81AF /* OptionParserSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionParserSpec.swift; sourceTree = "<group>"; };
-		F8889B7C1942431900DF1A47 /* Liftoff */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Liftoff; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8889B7F1942431900DF1A47 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F82A44FD19ED9F100080B387 /* OptionKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OptionKit.framework; path = ../../Frameworks/OptionKit.framework; sourceTree = "<group>"; };
+		F82A450319EDA0750080B387 /* liftoff */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = liftoff; sourceTree = BUILT_PRODUCTS_DIR; };
+		F82A450C19EDA0FA0080B387 /* liftoff-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "liftoff-Bridging-Header.h"; sourceTree = "<group>"; };
+		F82A450D19EDA0FB0080B387 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		F896ABB51980AB98008DD359 /* OptionParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OptionParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F896ABBF1980AB99008DD359 /* OptionParserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OptionParserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		F8889B791942431900DF1A47 /* Frameworks */ = {
+		F82A450019EDA0750080B387 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F802DD781980ACE6005F81AF /* OptionParser.framework in Frameworks */,
+				F82A450F19EDA11E0080B387 /* OptionKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F82A451019EDB0F50080B387 /* OptionKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,10 +131,28 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		F82A44FC19ED9EFF0080B387 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F82A44FD19ED9F100080B387 /* OptionKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F82A450B19EDA0C80080B387 /* liftoff */ = {
+			isa = PBXGroup;
+			children = (
+				F82A450D19EDA0FB0080B387 /* main.swift */,
+				F82A450C19EDA0FA0080B387 /* liftoff-Bridging-Header.h */,
+			);
+			path = liftoff;
+			sourceTree = "<group>";
+		};
 		F8889B731942431900DF1A47 = {
 			isa = PBXGroup;
 			children = (
-				F8889B7E1942431900DF1A47 /* Liftoff */,
+				F82A450B19EDA0C80080B387 /* liftoff */,
+				F82A44FC19ED9EFF0080B387 /* Frameworks */,
 				F802DD681980AC47005F81AF /* OptionParser */,
 				F802DD711980AC50005F81AF /* OptionParserTests */,
 				F8889B7D1942431900DF1A47 /* Products */,
@@ -143,19 +165,11 @@
 		F8889B7D1942431900DF1A47 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F8889B7C1942431900DF1A47 /* Liftoff */,
 				F896ABB51980AB98008DD359 /* OptionParser.framework */,
 				F896ABBF1980AB99008DD359 /* OptionParserTests.xctest */,
+				F82A450319EDA0750080B387 /* liftoff */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		F8889B7E1942431900DF1A47 /* Liftoff */ = {
-			isa = PBXGroup;
-			children = (
-				F8889B7F1942431900DF1A47 /* main.swift */,
-			);
-			path = Liftoff;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,22 +185,21 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		F8889B7B1942431900DF1A47 /* Liftoff */ = {
+		F82A450219EDA0750080B387 /* liftoff */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F8889B831942431900DF1A47 /* Build configuration list for PBXNativeTarget "Liftoff" */;
+			buildConfigurationList = F82A450719EDA0750080B387 /* Build configuration list for PBXNativeTarget "liftoff" */;
 			buildPhases = (
-				F8889B781942431900DF1A47 /* Sources */,
-				F8889B791942431900DF1A47 /* Frameworks */,
-				F8889B7A1942431900DF1A47 /* CopyFiles */,
-				6D9BF38864934DECA1962CD2 /* Warn for TODO and FIXME comments */,
+				F82A44FF19EDA0750080B387 /* Sources */,
+				F82A450019EDA0750080B387 /* Frameworks */,
+				F82A450119EDA0750080B387 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Liftoff;
-			productName = Liftoff;
-			productReference = F8889B7C1942431900DF1A47 /* Liftoff */;
+			name = liftoff;
+			productName = liftoff;
+			productReference = F82A450319EDA0750080B387 /* liftoff */;
 			productType = "com.apple.product-type.tool";
 		};
 		F896ABB41980AB98008DD359 /* OptionParser */ = {
@@ -234,8 +247,8 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = thoughtbot;
 				TargetAttributes = {
-					F8889B7B1942431900DF1A47 = {
-						CreatedOnToolsVersion = 6.0;
+					F82A450219EDA0750080B387 = {
+						CreatedOnToolsVersion = 6.1;
 					};
 					F896ABB41980AB98008DD359 = {
 						CreatedOnToolsVersion = 6.0;
@@ -258,9 +271,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F8889B7B1942431900DF1A47 /* Liftoff */,
 				F896ABB41980AB98008DD359 /* OptionParser */,
 				F896ABBE1980AB99008DD359 /* OptionParserTests */,
+				F82A450219EDA0750080B387 /* liftoff */,
 			);
 		};
 /* End PBXProject section */
@@ -282,29 +295,12 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		6D9BF38864934DECA1962CD2 /* Warn for TODO and FIXME comments */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Warn for TODO and FIXME comments";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "KEYWORDS=\"TODO:|FIXME:|\\?\\?\\?:|\\!\\!\\!:\"\nFILE_EXTENSIONS=\"h|m|mm|c|cpp\"\nfind -E \"${SRCROOT}\" -ipath \"${SRCROOT}/pods\" -prune -o \\( -regex \".*\\.($FILE_EXTENSIONS)$\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($KEYWORDS).*\\$\" | perl -p -e \"s/($KEYWORDS)/ warning: \\$1/\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		F8889B781942431900DF1A47 /* Sources */ = {
+		F82A44FF19EDA0750080B387 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8889B801942431900DF1A47 /* main.swift in Sources */,
+				F82A450E19EDA0FB0080B387 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +332,37 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		F82A450819EDA0750080B387 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = "~/Code/Frameworks";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) /Users/gordon/Code/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "liftoff/liftoff-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F82A450919EDA0750080B387 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = "~/Code/Frameworks";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) /Users/gordon/Code/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "liftoff/liftoff-Bridging-Header.h";
+			};
+			name = Release;
+		};
 		F8889B811942431900DF1A47 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -441,21 +468,6 @@
 			};
 			name = Release;
 		};
-		F8889B841942431900DF1A47 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		F8889B851942431900DF1A47 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		F896ABC91980AB99008DD359 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -465,6 +477,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/gordon/Code/Frameworks,
+				);
 				FRAMEWORK_VERSION = A;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -473,7 +489,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				INFOPLIST_FILE = OptionParser/Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -491,11 +506,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/gordon/Code/Frameworks,
+				);
 				FRAMEWORK_VERSION = A;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				INFOPLIST_FILE = OptionParser/Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -543,20 +561,19 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F82A450719EDA0750080B387 /* Build configuration list for PBXNativeTarget "liftoff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F82A450819EDA0750080B387 /* Debug */,
+				F82A450919EDA0750080B387 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		F8889B771942431900DF1A47 /* Build configuration list for PBXProject "Liftoff" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F8889B811942431900DF1A47 /* Debug */,
 				F8889B821942431900DF1A47 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F8889B831942431900DF1A47 /* Build configuration list for PBXNativeTarget "Liftoff" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F8889B841942431900DF1A47 /* Debug */,
-				F8889B851942431900DF1A47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
