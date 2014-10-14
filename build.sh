@@ -4,4 +4,4 @@ xcodebuild -project Liftoff.xcodeproj \
   -derivedDataPath build \
   LD_RUNPATH_SEARCH_PATHS="__LIB__"
 
-mv build/Build/Products/Debug/*.framework frameworks
+# mv build/Build/Products/Debug/*.framework frameworks
