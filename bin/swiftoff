@@ -1,5 +1,5 @@
-#!/usr/bin/env xcrun swift -F __LIB__
+#!/usr/bin/env xcrun swift -F /Users/gordon/Code/gfontenot/Swiftoff/frameworks
 
-import OptionParser
+import CLI
 
-doShit(Process.arguments)
+let options = CLI(arguments: Process.arguments).passedOptions

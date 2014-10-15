@@ -1,0 +1,10 @@
+framework module CLI {
+  umbrella header "CLI.h"
+
+  export *
+  module * { export * }
+}
+
+module CLI.Swift {
+    header "CLI-Swift.h"
+}

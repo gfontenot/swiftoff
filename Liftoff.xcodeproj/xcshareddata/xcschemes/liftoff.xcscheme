@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F82A450219EDA0750080B387"
-               BuildableName = "liftoff"
-               BlueprintName = "liftoff"
+               BlueprintIdentifier = "F88628C919EEB4C800CAE894"
+               BuildableName = "CLI.framework"
+               BlueprintName = "CLI"
                ReferencedContainer = "container:Liftoff.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,9 +28,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F896ABB41980AB98008DD359"
-               BuildableName = "OptionParser.framework"
-               BlueprintName = "OptionParser"
+               BlueprintIdentifier = "F88628EB19EEC18700CAE894"
+               BuildableName = "Functional.framework"
+               BlueprintName = "Functional"
                ReferencedContainer = "container:Liftoff.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,9 +46,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F82A450219EDA0750080B387"
-            BuildableName = "liftoff"
-            BlueprintName = "liftoff"
+            BlueprintIdentifier = "F88628C919EEB4C800CAE894"
+            BuildableName = "CLI.framework"
+            BlueprintName = "CLI"
             ReferencedContainer = "container:Liftoff.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -62,15 +62,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F82A450219EDA0750080B387"
-            BuildableName = "liftoff"
-            BlueprintName = "liftoff"
+            BlueprintIdentifier = "F88628C919EEB4C800CAE894"
+            BuildableName = "CLI.framework"
+            BlueprintName = "CLI"
             ReferencedContainer = "container:Liftoff.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -80,15 +80,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F82A450219EDA0750080B387"
-            BuildableName = "liftoff"
-            BlueprintName = "liftoff"
+            BlueprintIdentifier = "F88628C919EEB4C800CAE894"
+            BuildableName = "CLI.framework"
+            BlueprintName = "CLI"
             ReferencedContainer = "container:Liftoff.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
